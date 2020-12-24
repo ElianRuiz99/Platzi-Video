@@ -1,13 +1,12 @@
 body{
     margin: 0;
-    background-color: #8f57fd;
     font-family: 'Ruluko', sans-serif;
 }
 /*Estilos del header */
 .header{
     width: 100%;
     height: 70px;
-    background-color: #8f57fd;
+    background-color: #21c08b;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,3 +68,154 @@ body{
     margin-bottom: 0px;
     color: white;
 }
+/*fin estilos del header*/
+/*Inicio de estilos de la seccion principal*/
+.img-social{
+    width: 25px;
+    height: 25px;
+}
+
+.login{
+    background: linear-gradient(#21c08b, #AB88ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+
+.login__container{
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px  solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 50px 40px;
+    min-height: 380px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.login__container--title{
+    display: flex;
+    justify-content: center;
+}
+
+.login__container--form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login__container--form label{
+    font-size: 15px;
+}
+
+.login__container--remember-me{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    margin: 10px;
+}
+
+.login__container--remember-me a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.login__container--remember-me a:hover{
+    text-decoration: underline;
+}
+
+.login__container--social-media > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.login__container--social-media > div a{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.login__container--register{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.login__container--register a{
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.login__container--register a:hover{
+    text-decoration: underline;
+}
+
+.input{
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid white;
+    font-size: 16px;
+    font-family: 'Ruluko', sans-serif;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+::placeholder{
+    color: white;
+}
+
+.button{
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px 0px;
+}
+
+.button:hover{
+    border: 2px solid white;
+    box-shadow: 0 5px 10px 0 #20212447;
+}
+/*fin de estilos de la seccion principal*/
+/*Inicio de estilos del footer*/
+.footer{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #AB88ff;
+}
+
+.footer a{
+    color: white;
+    margin: 0px 20px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+/*fin de estilos del footer*/
