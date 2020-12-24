@@ -102,7 +102,7 @@ body{
     border-color: #dfe1e500;
 }
 /*fin de la seccion main*/
-/*inicio de la seccion del carrucel*/
+/*inicio de la seccion del carrusel*/
 .carrousel{
     width: 100%;
     overflow: scroll;
@@ -142,8 +142,8 @@ body{
     transform: scale(1.5);
     opacity: 1;
 }
-/*fin de la seccion del carrucel*/
-/*inicio de los items del carrucel*/
+/*fin de la seccion del carrusel*/
+/*inicio de los items del carrusel*/
 .carrousel-item__img{
     height: 250px;
     width: 200px;
@@ -162,4 +162,4 @@ body{
     right: 0;
     bottom: 0;
 }
-/*fin de los items del carrucel*/
+/*fin de los items del carrusel*/
