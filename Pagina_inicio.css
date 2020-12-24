@@ -72,7 +72,7 @@ body{
 /*Fin estilos del header*/
 /*inicio de la seccion main*/
 .main{
-    height: 300px;
+    height: 200px;
 }
 
 .main__title{
@@ -102,3 +102,64 @@ body{
     border-color: #dfe1e500;
 }
 /*fin de la seccion main*/
+/*inicio de la seccion del carrucel*/
+.carrousel{
+    width: 100%;
+    overflow: scroll;
+    padding-left: 30px;
+    position: relative;
+}
+
+.carrousel__container{
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+
+.carrousel-item{
+    background: black;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+    position: relative;
+}
+
+.carrousel-item:hover ~ .carrousel-item{
+    transform: translate3d(100px, 0, 0);
+}
+
+.carrousel__container:hover .carrousel-item{
+    opacity: 0.3;
+}
+
+.carrousel__container:hover .carrousel-item:hover{
+    transform: scale(1.5);
+    opacity: 1;
+}
+/*fin de la seccion del carrucel*/
+/*inicio de los items del carrucel*/
+.carrousel-item__img{
+    height: 250px;
+    width: 200px;
+    object-fit: cover; /*imagen toma su tamaño*/
+}
+
+.carrousel-item__details{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    font-size: 10px;
+    opacity: 1;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+/*fin de los items del carrucel*/
