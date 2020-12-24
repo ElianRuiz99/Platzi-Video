@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Pagina_inicio_de_sesion.css">
+    <title>Inicia Sesion</title>
+</head>
+<body>
+    <!--Inicio del Header-->
+    <header class="header">
+        <!--parte izquierda del header-->
+        <img class="header__img" src="https://raw.githubusercontent.com/platzi/PlatziVideo/feature/react/src/assets/static/logo-platzi-video-BW2.png" alt="">
+        <!--parte derecha del header-->
+        <div class="header__menu">
+            <div class="header__menu--profile">
+                <img src="/Users/arlen/OneDrive/Imágenes/iconos para aplicaciones/user-icon.png" alt="user">
+                <p>Perfil</p>
+            </div>
+            <ul>
+                <li><a href="">Cuenta</a></li>
+                <li><a href="">Cerrar Sesion</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--Fin del Header-->
+    <!--Inicio de la seccion-->
+    <section class="login">
+        <section class="login__container">
+            <h2>Inicia Sesion</h2>
+            <form class="login__container--form">
+                <input class="input" type="text" placeholder="Correo">
+                <input class="input" type="password" placeholder="Contraseña">
+                <button class="button">Iniciar sesion</button>
+                <div class="login__container--remember-me">
+                    <label>
+                        <input type="checkbox" id="cbox1" value="checkbos">Recuerdame
+                    </label>
+                    <a href="/">Olvide mi Contraseña</a>
+                </div>
+            </form>
+            <section class="login__container--social-media">
+                <div>
+                    <img src="https://icon-library.com/images/google-g-icon/google-g-icon-9.jpg" alt="icon google">Inicia Sesion Con Google
+                </div>
+                <div>
+                    <img src="https://secureservercdn.net/192.169.221.188/7d7.5b1.myftpupload.com/wp-content/uploads/2014/10/Twitter_logo_white.png?time=1597441252" alt="icon Twitter">Inicia Sesion Con Twitter
+                </div>
+            </section>
+            <p class="login__container--register">No tienes ninguna cuenta <a href="/">Registrate</a></p>
+        </section>
+    </section>
+    <!--Fin de la seccion-->
+    <!--Inicio del footer-->
+    <footer class="footer">
+        <a href="">Terminos de uso</a>
+        <a href="">Declaracion de privacidad</a>
+        <a href="">Centro de ayuda</a>
+    </footer>
+    <!--Fin del footer-->
+</body>
+</html>
