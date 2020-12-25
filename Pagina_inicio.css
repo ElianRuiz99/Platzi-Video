@@ -72,7 +72,10 @@ body{
 /*Fin estilos del header*/
 /*inicio de la seccion main*/
 .main{
-    height: 200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .main__title{
@@ -105,7 +108,7 @@ body{
 /*inicio de la seccion del carrusel*/
 .carrousel{
     width: 100%;
-    overflow: scroll;
+    overflow: hidden;
     padding-left: 30px;
     position: relative;
 }
@@ -114,6 +117,12 @@ body{
     white-space: nowrap;
     margin: 70px 0px;
     padding-bottom: 10px;
+}
+
+.carrousel__title{
+    font-size: 17px;
+    color: white;
+    margin: 0;
 }
 
 .carrousel-item{
@@ -161,9 +170,66 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    color: white;
+}
+
+.img-icon{
+    width: 30px;
+    height: 30px;
 }
 
 .carrousel-item__details:hover{
     opacity: 1;
 }
+
+.arrousel-item__details--title{
+    margin: 0;
+}
+
+.carrousel-item__details--subtitle{
+    margin: 0;
+}
 /*fin de los items del carrusel*/
+/*Inicio de estilos del footer*/
+.footer{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #8f57fd;
+}
+
+.footer a{
+    color: white;
+    margin: 0px 20px;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+/*fin de estilos del footer*/
+@media only screen and (max-width:600px){
+    .main{
+        margin-top: 30px;
+    }
+
+    .carrousel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: scroll;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
