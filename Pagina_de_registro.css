@@ -195,3 +195,24 @@ body{
     font-weight: bold;
 }
 /*fin de estilos del footer*/
+
+@media only screen and (max-width: 600px){
+    .main{
+        min-height: calc(150vh - 200px);
+    }
+
+    .main__container{
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .main__container--social-media{
+        margin-top: 20px;
+    }
+
+    .footer{
+        align-items: center;
+        flex-direction: column;
+    }
+}
